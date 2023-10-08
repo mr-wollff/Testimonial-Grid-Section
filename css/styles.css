@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*,*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px 0;
+}
+
+.relative--position{
+    position: relative;
+}
+
+.cards{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    /* background: gold; */
+}
+
+.card{
+    padding: 30px;
+    border-radius: 10px;
+    /* background-color: hsl(263, 55%, 52%); */
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    /* margin-bottom: 30px; */
+}
+
+.card--primary{
+    background-color: hsl(263, 55%, 52%);
+}
+
+.card--second{
+    background-color: hsl(217, 19%, 35%);
+}
+.card--third{
+    background-color: hsl(0, 0%, 100%);
+}
+.card--fourth{
+    background-color: hsl(219, 29%, 14%);
+}
+.card--fifth{
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* .color-white{
+    color: hsl(0, 0%, 100%);
+} */
+
+.color--dark{
+    color: hsl(217, 19%, 35%);
+}
+
+/* card header section */
+
+.card--header{
+    display: flex;
+    align-items: center;
+}
+
+.card--header img{
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 45px;
+    height: 45px;
+}
+
+.header__badge{
+    opacity: .5;
+}
+
+.card--primary{
+    position: relative;
+}
+
+.card--primary .quote{
+    position: absolute;
+    right: 40px;
+    top: 0;
+    width: 120px;
+}
+
+.primary__image{
+    border: 3px solid hsla(0, 0%, 100%, .5);
+}
+.fourth__image{
+    border: 3px solid hsl(263, 55%, 52%);
+}
+
+/* Card Footer Section */
+
+.footer__content{
+    opacity: .7;
+}
+
+/* card body section */
+
+.card--body{
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.body__content{
+    font-size: 20px;
+}
+
+.card p{
+    font-size: 17px;
+}
+
+/* Media Queris For all */
+
+@media screen and (min-width: 700px) {
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cards{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        'one one two five'
+        'three four four five';
+        max-width: 1400px;
+        /* margin: 100px auto 0; */
+    }
+
+    .card--primary{
+        grid-area: one;
+    }
+
+    .card--second{
+        grid-area: two;
+    }
+
+    .card--third{
+        grid-area: three;
+    }
+
+    .card--fourth{
+        grid-area: four;
+    }
+
+    .card--fifth{
+        grid-area: five;
+    }
+}
