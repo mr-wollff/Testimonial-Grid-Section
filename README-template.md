@@ -24,8 +24,8 @@ The challenge in this work wos to create the layout in the desktop view, but I h
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/mr-wollff/Testimonial-Grid-Section
+- Live Site URL: https://testimonial-grid-section.web.app/
 
 ## My process
 
@@ -43,4 +43,4 @@ I learned more about the grid layout and re-enforced my mind to remember what I 
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@mr-wollff](https://www.frontendmentor.io/profile/mr-wollff)
